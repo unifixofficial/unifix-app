@@ -1,0 +1,230 @@
+.about-page * {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.about-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 64px auto 0;
+  padding: 0 48px 80px;
+  min-height: 480px;
+}
+
+.about-hero-text {
+  flex: 0 0 440px;
+  max-width: 440px;
+}
+
+.about-hero-title {
+  font-size: 38px;
+  font-weight: 400;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  letter-spacing: -0.5px;
+}
+
+.about-hero-title strong {
+  font-weight: 800;
+  display: block;
+}
+
+.about-hero-block {
+  margin-bottom: 28px;
+}
+
+.about-hero-lead {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.about-hero-body {
+  font-size: 14.5px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.about-hero-body strong {
+  color: #16a34a;
+}
+
+.about-hero-visual {
+  position: relative;
+  flex: 0 0 480px;
+  width: 480px;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-blob-bg {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  width: 110%;
+  height: 110%;
+  background: #f0fdf4;
+  border-radius: 55% 45% 60% 40% / 45% 55% 45% 55%;
+  z-index: 0;
+}
+
+.about-pill {
+  position: absolute;
+  left: 12px;
+  bottom: 56px;
+  width: 18px;
+  height: 80px;
+  background: #16a34a;
+  border-radius: 40px;
+  z-index: 2;
+}
+
+.about-hero-img {
+  position: relative;
+  z-index: 1;
+  width: 88%;
+  height: 88%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 28px;
+  box-shadow: none;
+  margin-left: auto;
+}
+.about-champions {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 48px 96px;
+}
+
+.about-champions-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-champions-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.about-champions-accent {
+  width: 40px;
+  height: 4px;
+  background: #16a34a;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.about-champions-body {
+  font-size: 14.5px;
+  color: #64748b;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.about-team-grid {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+
+.about-team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 90px;
+}
+
+.about-team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(22, 163, 74, 0.25);
+  border: 3px solid #f0fdf4;
+}
+
+.about-team-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: center;
+}
+
+.about-team-role {
+  font-size: 12px;
+  color: #64748b;
+  text-align: center;
+}
+
+.about-small-circle {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 3;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.about-small-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+@media (max-width: 900px) {
+  .about-hero,
+  .about-champions {
+    flex-direction: column;
+    padding: 0 20px 60px;
+    margin-top: 40px;
+    gap: 32px;
+  }
+
+  .about-hero-text,
+  .about-champions-left {
+    max-width: 100%;
+  }
+
+  .about-hero-visual {
+    max-width: 100%;
+    height: 320px;
+    width: 100%;
+  }
+
+  .about-hero-title {
+    font-size: 28px;
+  }
+
+  .about-champions {
+    padding: 40px 20px 60px;
+  }
+
+  .about-team-grid {
+    justify-content: center;
+  }
+}
