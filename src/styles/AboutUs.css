@@ -92,11 +92,16 @@
   width: 88%;
   height: 88%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
   border-radius: 28px;
   box-shadow: none;
   margin-left: auto;
 }
+
+.about-small-circle {
+  display: none;
+}
+
 .about-champions {
   display: flex;
   align-items: flex-start;
@@ -177,25 +182,6 @@
   text-align: center;
 }
 
-.about-small-circle {
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: 3;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-}
-
-.about-small-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left top;
-}
-
 @media (max-width: 900px) {
   .about-hero,
   .about-champions {
@@ -212,8 +198,10 @@
 
   .about-hero-visual {
     max-width: 100%;
-    height: 320px;
     width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-height: 400px;
   }
 
   .about-hero-title {
@@ -226,5 +214,40 @@
 
   .about-team-grid {
     justify-content: center;
+  }
+  
+  .about-blob-bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+  
+  .about-hero-img {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-visual {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-height: 320px;
+  }
+  
+  .about-hero-img {
+    width: 90%;
+    height: 90%;
+  }
+  
+  .about-pill {
+    left: 8px;
+    bottom: 40px;
+    width: 14px;
+    height: 60px;
   }
 }

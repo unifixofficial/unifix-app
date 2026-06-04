@@ -51,9 +51,7 @@ export default function AboutUs() {
        
        <div className="about-hero-visual">
   <div className="about-blob-bg" />
-  <div className="about-small-circle">
-    <img src={aboutImg} alt="Student using UniFiX" className="about-small-img" />
-  </div>
+
   <div className="about-pill" />
   <img src={aboutImg} alt="UniFiX in action" className="about-hero-img" />
 </div>

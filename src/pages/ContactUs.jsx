@@ -1,5 +1,5 @@
 import "../styles/Contact.css";
-import { Mail, Phone, MapPin, User, MessageSquare, Download, Smartphone, CheckCircle, XCircle } from 'lucide-react';
+import { Mail, Phone, User, MessageSquare, Download, Smartphone, CheckCircle, XCircle } from 'lucide-react';
 import { useState } from 'react';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -91,7 +91,7 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <div className="contact-info-item">
+            {/* <div className="contact-info-item">
               <div className="contact-info-icon">
                 <MapPin size={20} />
               </div>
@@ -104,7 +104,7 @@ export default function ContactUs() {
                   Vasai, Maharashtra 401202
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="contact-find-us">
