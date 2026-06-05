@@ -65,7 +65,7 @@ export default function Navbar() {
         </li>
         <li>
           <a
-            href="https://expo.dev/accounts/unifix-official/projects/unifix/builds/9919ff63-6542-4b18-8a16-89178a7a3413"
+            href="https://expo.dev/accounts/unifix-official/projects/unifix/builds/9e21ff24-b12b-407b-ae3e-2fbd9b6707c7"
             className="tnc-navbar-btn"
             target="_blank"
             rel="noopener noreferrer"
