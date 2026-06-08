@@ -11,6 +11,12 @@
 .about-page > footer {
   margin-top: auto;
 }
+
+@media (max-width: 900px) {
+  .about-page {
+    min-height: 100dvh;
+  }
+}
 .about-hero {
   display: flex;
   flex-direction: row;
