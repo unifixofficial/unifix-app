@@ -1,8 +1,15 @@
 .contact-page {
   background-color: #f8fafc;
-  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
 }
 
+.contact-page > footer {
+  margin-top: auto;
+}
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -251,7 +258,6 @@
   background-color: #16a34a;
 }
 
-
 .toast-msg {
   position: fixed;
   bottom: 32px;
@@ -311,8 +317,6 @@
     font-size: 24px;
   }
 }
-
-
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .contact-footer {

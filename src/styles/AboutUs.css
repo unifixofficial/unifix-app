@@ -2,10 +2,16 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 .about-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .about-page > footer {
@@ -265,7 +271,6 @@
     height: 60px;
   }
 }
-
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .tnc-footer-top {
