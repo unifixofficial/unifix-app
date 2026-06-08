@@ -5,6 +5,7 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
 import GrievanceRedressal from './pages/GrievanceRedressal';
+import CopyrightPolicy from './pages/CopyrightPolicy';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/grievance" element={<GrievanceRedressal />} />
+        <Route path="/copyright" element={<CopyrightPolicy />} />
       </Routes>
     </BrowserRouter>
   );

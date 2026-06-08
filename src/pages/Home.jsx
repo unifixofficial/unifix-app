@@ -53,10 +53,11 @@ export default function Home() {
               <Link to="/contact">Contact Us</Link>
               <Link to="/privacy">Privacy Policy</Link>
             </div>
-            <div className="home-footer-col">
-              <Link to="/terms">Terms & Conditions</Link>
-              <Link to="/grievance">Grievance Redressal</Link>
-            </div>
+           <div className="home-footer-col">
+  <Link to="/terms">Terms & Conditions</Link>
+  <Link to="/grievance">Grievance Redressal</Link>
+  <Link to="/copyright">Copyright Policy</Link>
+</div>
           </div>
         </div>
 

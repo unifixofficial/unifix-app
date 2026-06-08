@@ -44,6 +44,7 @@ export default function Footer() {
             <li><a href="/privacy">Privacy Policy</a></li>
             <li><a href="/terms">Terms &amp; Conditions</a></li>
             <li><a href="/grievance">Grievance Redressal</a></li>
+            <li><a href="/copyright">Copyright Policy</a></li>
           </ul>
         </div>
 
