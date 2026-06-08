@@ -20,7 +20,7 @@ export default function Home() {
             Smart, fast, and transparent campus management at your fingertips.
           </p>
           <div className="home-hero-actions">
-            <a href="https://expo.dev/accounts/unifix-official/projects/unifix/builds/9e21ff24-b12b-407b-ae3e-2fbd9b6707c7" className="home-btn-primary" target="_blank" rel="noopener noreferrer">Download App</a>
+            <a href="https://expo.dev/accounts/unifix-official/projects/unifix/builds/9cd6afe0-5162-4322-ac34-81bfc7db8174" className="home-btn-primary" target="_blank" rel="noopener noreferrer">Download App</a>
             <Link to="/about" className="home-btn-secondary">Learn More</Link>
           </div>
         </div>

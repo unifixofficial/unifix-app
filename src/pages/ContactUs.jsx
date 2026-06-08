@@ -34,7 +34,7 @@ export default function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    try {
+    try { 
       const res = await fetch(`${import.meta.env.VITE_API_URL}/contact/send`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
