@@ -1,33 +1,10 @@
-import { useState } from "react";
-import { Download, Smartphone, ShieldAlert, CheckCircle, Loader2 } from "lucide-react";
+import { Smartphone, ShieldAlert, ExternalLink } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/BuildDownload.css";
 
 export default function BuildDownload() {
-  const [downloading, setDownloading] = useState(false);
-  const [downloadComplete, setDownloadComplete] = useState(false);
-  const downloadUrl = "/UniFix.apk";
-
-  const handleDownload = async () => {
-    setDownloading(true);
-    
-    setTimeout(() => {
-      const link = document.createElement("a");
-      link.href = downloadUrl;
-      link.download = "UniFix.apk";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      setDownloading(false);
-      setDownloadComplete(true);
-      
-      setTimeout(() => {
-        setDownloadComplete(false);
-      }, 3000);
-    }, 500);
-  };
+  const downloadUrl = "https://expo.dev/accounts/unifix-official/projects/unifix/builds/20410a42-ef0e-4533-8091-a62ffd5812bb";
 
   return (
     <div className="build-page">
@@ -65,7 +42,7 @@ export default function BuildDownload() {
             </div>
             <div className="detail-row">
               <span className="detail-label">File size</span>
-              <span className="detail-value">91.56 MB</span>
+              <span className="detail-value">94.1 MB</span>
             </div>
             <div className="detail-row">
               <span className="detail-label">Version</span>
@@ -74,28 +51,15 @@ export default function BuildDownload() {
           </div>
 
           <div className="build-actions">
-            <button 
-              className={`btn-install ${downloading ? "downloading" : ""} ${downloadComplete ? "complete" : ""}`}
-              onClick={handleDownload}
-              disabled={downloading}
+            <a 
+              href={downloadUrl}
+              className="btn-install"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {downloading ? (
-                <>
-                  <Loader2 size={18} className="spin" />
-                  Starting download...
-                </>
-              ) : downloadComplete ? (
-                <>
-                  <CheckCircle size={18} />
-                  Download started!
-                </>
-              ) : (
-                <>
-                  <Download size={18} />
-                  Install APK
-                </>
-              )}
-            </button>
+              <ExternalLink size={18} />
+              Download from Expo
+            </a>
           </div>
 
           <div className="build-note">
