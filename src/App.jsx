@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import GrievanceRedressal from './pages/GrievanceRedressal';
 import CopyrightPolicy from './pages/CopyrightPolicy';
 import BuildDownload from './pages/BuildDownload';
+import DeleteAccountRequest from './pages/DeleteAccountRequest';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/grievance" element={<GrievanceRedressal />} />
         <Route path="/copyright" element={<CopyrightPolicy />} />
         <Route path="/download" element={<BuildDownload />} />
+        <Route path="/delete-account" element={<DeleteAccountRequest />} />
       </Routes>
     </BrowserRouter>
   );
