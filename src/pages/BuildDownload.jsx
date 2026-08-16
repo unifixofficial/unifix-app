@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import "../styles/BuildDownload.css";
 
 export default function BuildDownload() {
-  const downloadUrl = "https://expo.dev/accounts/unifix-official/projects/unifix/builds/20410a42-ef0e-4533-8091-a62ffd5812bb";
+  const downloadUrl = "https://upload.app/download/unifix/com.unifix.app/74eaae728762e3f9ab5857b7978aab7f2f32a33e9d216592b171465fd9775988";
 
   return (
     <div className="build-page">
@@ -42,7 +42,7 @@ export default function BuildDownload() {
             </div>
             <div className="detail-row">
               <span className="detail-label">File size</span>
-              <span className="detail-value">98.69 MB</span>
+              <span className="detail-value">140.4 MB</span>
             </div>
             <div className="detail-row">
               <span className="detail-label">Version</span>
@@ -58,7 +58,7 @@ export default function BuildDownload() {
               rel="noopener noreferrer"
             >
               <ExternalLink size={18} />
-              Download from Expo
+              Download the App
             </a>
           </div>
 
