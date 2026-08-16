@@ -9,479 +9,465 @@ const PartHeading = ({ children }) => <h2 className="tnc-part-heading">{children
 const UL = ({ children }) => <ul className="tnc-list">{children}</ul>;
 const Divider = () => <hr className="tnc-divider" />;
 const PhoneLink = ({ number }) => (
-  <a
-    href={`tel:${number}`}
-    style={{ fontWeight: 500, textDecoration: 'none', color: '#16a34a' }}
-    className="phone-link"
-  >
+  <a href={`tel:${number}`} style={{ fontWeight: 500, textDecoration: "none", color: "#16a34a" }} className="phone-link">
     {number}
   </a>
 );
+
 export default function TermsAndConditions() {
   return (
     <div className="tnc-page">
-  <Navbar active="terms" />
-
-   
-
+      <Navbar active="terms" />
       <div className="tnc-container">
-      
+
         <h1 className="tnc-main-title">TERMS AND CONDITIONS FOR UNIFIX PLATFORM</h1>
-        <p className="tnc-main-subtitle">
-          Operated by UniFiX ("VCET", "College", "We", "Us", "Our")
-        </p>
+        <p className="tnc-main-subtitle">Effective Date: 14 August 2026 &nbsp;|&nbsp; Last Updated: 14 August 2026</p>
 
-
+        <SectionHeading>1. Introduction</SectionHeading>
         <Para>
-          By accessing, downloading, or using the UniFiX Platform, you agree to be bound by these Terms and Conditions.
-          If you do not agree, you must immediately discontinue use of the Platform. These Terms supersede all prior
-          agreements between you and UniFiX.
+          Welcome to UniFiX. UniFiX is a Campus Complaint Management System designed for use by educational institutions (the "Institution"). The platform provides a centralized system for submitting, tracking, and resolving campus facility and maintenance complaints, as well as managing lost and found items on campus.
+        </Para>
+        <Para>
+          By accessing or using the UniFiX application, website, or any related services (collectively, the "Platform"), you agree to be bound by these Terms &amp; Conditions (the "Terms"). If you do not agree to these Terms, you may not use the Platform.
+        </Para>
+        <Para>
+          These Terms apply to all users of the Platform, including students, teachers, staff, administrators, and any other individuals who access or use the Platform.
         </Para>
 
-        <PartHeading>A. GENERAL TERMS</PartHeading>
+        <Divider />
 
-        <SectionHeading>I. DEFINITIONS</SectionHeading>
-        <Para>In these Terms, unless the context otherwise requires:</Para>
+        <SectionHeading>2. Definitions</SectionHeading>
         <UL>
-          <li><strong>"Platform"</strong> means the UniFiX mobile application and website.</li>
-          <li><strong>"Services"</strong> means complaint management, lost and found, anti-ragging reporting, and related campus services.</li>
-          <li><strong>"User" / "You" / "Your"</strong> means any student, teacher, or staff member using the Platform.</li>
-          <li><strong>"Complaint"</strong> means any maintenance issue reported through the Platform.</li>
-          <li><strong>"Admin"</strong> means authorized college personnel managing the Platform.</li>
-          <li><strong>"Staff"</strong> means maintenance staff assigned to resolve complaints.</li>
-          <li><strong>"College"</strong> means Vidyavardhini's College of Engineering and Technology, Vasai.</li>
-          <li><strong>"HOD"</strong> means Head of Department for anti-ragging escalations.</li>
-          <li><strong>"Account"</strong> means your registered account on the Platform.</li>
+          <li><strong>"UniFiX" / "Platform" / "Application"</strong> refers to the Campus Complaint Management System, including its mobile application, administrative panel, backend services, and associated websites.</li>
+          <li><strong>"User"</strong> refers to any individual who creates an account, accesses, or uses the Platform in any capacity.</li>
+          <li><strong>"Student"</strong> refers to a User who is enrolled at the Institution and has been assigned the student role on the Platform.</li>
+          <li><strong>"Teacher"</strong> refers to a User who is employed as a faculty member at the Institution and has been assigned the teacher role on the Platform.</li>
+          <li><strong>"Staff" / "Maintenance Staff"</strong> refers to a User employed by the Institution in a maintenance or facilities capacity, assigned the staff role, subject to administrative approval.</li>
+          <li><strong>"Administrator" / "Admin"</strong> refers to a User granted administrative privileges to manage the Platform, including Users, complaints, and system settings.</li>
+          <li><strong>"Institution"</strong> refers to the educational institution for which UniFiX is deployed.</li>
+          <li><strong>"Complaint"</strong> refers to any report, request, or issue submitted through the Platform regarding campus facilities, maintenance, or related matters.</li>
+          <li><strong>"Lost &amp; Found"</strong> refers to the functionality that allows Users to post and claim lost or found items on campus.</li>
+          <li><strong>"Content"</strong> refers to any information, text, images, photographs, or other materials submitted by Users through the Platform.</li>
         </UL>
 
-        <SectionHeading>II. ACCEPTANCE OF TERMS</SectionHeading>
+        <Divider />
+
+        <SectionHeading>3. Eligibility and User Accounts</SectionHeading>
+
+        <SubHeading>3.1 Account Creation</SubHeading>
         <Para>
-          By accessing, downloading, or using the UniFiX Platform, you agree to be bound by these Terms and
-          Conditions. If you do not agree, you must immediately discontinue use of the Platform.
+          To use the Platform, you must create an account. Account creation is available to individuals affiliated with the Institution, including students, teachers, and staff members. Administrators are designated by the Institution.
         </Para>
-        <Para>These Terms supersede all prior agreements between you and UniFiX.</Para>
-
-        <SectionHeading>III. ELIGIBILITY AND ACCOUNT REGISTRATION</SectionHeading>
-
-        <SubHeading>3.1 Age Requirement</SubHeading>
-        <Para>You must be at least 16 years of age to register for this Service.</Para>
-
-        <SubHeading>3.2 Account Information</SubHeading>
         <Para>
-          You agree to provide accurate, complete, and current information. Students and teachers must register
-          using their official <strong>@vcet.edu.in</strong> email address.
+          You represent and warrant that all information you provide during registration is accurate, complete, and current. You are responsible for maintaining the accuracy of your account information and updating it as necessary.
         </Para>
 
-        <SubHeading>3.3 Account Security</SubHeading>
-        <Para>
-          You are solely responsible for maintaining the confidentiality of your login credentials and for all
-          activities under your Account.
-        </Para>
+        <SubHeading>3.2 Account Security</SubHeading>
+        <Para>You are solely responsible for maintaining the confidentiality of your account credentials, including your password. You are responsible for all activities that occur under your account. You agree to:</Para>
+        <UL>
+          <li>Not share your account credentials with others;</li>
+          <li>Notify UniFiX immediately if you suspect any unauthorized use of your account;</li>
+          <li>Use a strong, unique password and change it periodically.</li>
+        </UL>
+        <Para>UniFiX is not liable for any loss or damage arising from your failure to protect your account credentials.</Para>
+
+        <SubHeading>3.3 Account Types</SubHeading>
+        <Para>The Platform supports the following account types, each with different permissions and access levels:</Para>
+        <UL>
+          <li><strong>Student:</strong> Can submit complaints, track complaint status, use Lost &amp; Found functionality, and rate completed complaints.</li>
+          <li><strong>Teacher:</strong> Can submit complaints, track complaint status, and use Lost &amp; Found functionality.</li>
+          <li><strong>Staff:</strong> Can accept, process, and complete complaints assigned to them, and post found items in the Lost &amp; Found section. Staff accounts require administrative approval before becoming active.</li>
+          <li><strong>Administrator:</strong> Has full access to manage Users, complaints, staff verification, ID card requests, deletion requests, security issues, and system settings.</li>
+        </UL>
 
         <SubHeading>3.4 Account Termination</SubHeading>
-        <Para>We reserve the right to suspend or terminate your Account for any of the following reasons:</Para>
-        <UL>
-          <li>Violation of these Terms</li>
-          <li>Submission of fraudulent complaints</li>
-          <li>Harassment of staff or other users</li>
-          <li>Extended account inactivity of 12 months or more</li>
-        </UL>
-
-        <SectionHeading>IV. YOUR REPRESENTATIONS AND WARRANTIES</SectionHeading>
-        <Para>You represent, warrant, and undertake that:</Para>
-        <UL>
-          <li>You are at least 16 years of age</li>
-          <li>You are not restricted by any legal authority from using the Platform</li>
-          <li>You will use the Services only for permitted purposes</li>
-          <li>All information you provide is true, accurate, and complete</li>
-          <li>You will not create multiple accounts for fraudulent purposes</li>
-        </UL>
-
-        <SectionHeading>V. YOUR CONDUCT</SectionHeading>
-        <Para>You agree NOT to do any of the following:</Para>
-        <UL>
-          <li>Submit false, misleading, or frivolous complaints</li>
-          <li>Use abusive, threatening, or inappropriate language</li>
-          <li>Upload offensive, illegal, or harmful images</li>
-          <li>Attempt to access restricted areas of the Platform</li>
-          <li>Interfere with or disrupt the Service</li>
-          <li>Impersonate any other person</li>
-          <li>Reverse engineer or extract source code</li>
-          <li>Use the Platform for any unlawful purpose</li>
-        </UL>
-
-        <SubHeading>Prohibited Content</SubHeading>
-        <Para>You shall not upload, display, or transmit any information that:</Para>
-        <UL>
-          <li>Belongs to another person without right</li>
-          <li>Is harmful, offensive, harassing, obscene, or pornographic</li>
-          <li>Infringes any intellectual property rights</li>
-          <li>Harms minors in any way</li>
-          <li>Contains viruses, malware, or harmful code</li>
-          <li>Threatens the unity, integrity, or security of India</li>
-          <li>Violates any applicable law</li>
-        </UL>
-
-        <SectionHeading>VI. SERVICES PROVIDED</SectionHeading>
-        <Para>UniFiX provides the following Services:</Para>
-
-        <SubHeading>6.1 Complaint Management</SubHeading>
         <Para>
-          A platform to report campus maintenance issues including electrical, plumbing, cleaning, washroom,
-          technician, safety, and others. Complaints are routed to appropriate staff members with automatic
-          escalation if unresolved.
+          UniFiX reserves the right to suspend or terminate your account if you violate these Terms, engage in fraudulent or abusive behavior, or if required by the Institution. You may request account deletion through the Platform, subject to the provisions in Section 15.
         </Para>
-
-        <SubHeading>6.2 Lost and Found</SubHeading>
-        <Para>
-          A system to report lost items and post found items, with handover tracking and claims management.
-        </Para>
-
-        <SubHeading>6.3 Anti-Ragging Reporting</SubHeading>
-        <Para>
-          A confidential reporting mechanism for ragging incidents, with direct escalation to the HOD. Reports
-          may be submitted anonymously or with identity.
-        </Para>
-
-        <SubHeading>6.4 Support Services</SubHeading>
-        <Para>Push notifications, complaint tracking, staff ratings, and other ancillary services.</Para>
-
-        <SectionHeading>VII. COMMUNICATION AND NOTIFICATIONS</SectionHeading>
-        <Para>You agree that UniFiX may communicate with you through any of the following means:</Para>
-        <UL>
-          <li>Push notifications with your consent</li>
-          <li>Email at your registered email address</li>
-          <li>SMS if phone number is provided</li>
-        </UL>
-        <Para>
-          You may opt out of push notifications through your device settings. Critical service communications
-          such as complaint status updates may still be sent.
-        </Para>
-
-        <SectionHeading>VIII. PAYMENT FOR SERVICES</SectionHeading>
-        <Para>
-          The Service is currently provided <strong>FREE of charge</strong>. UniFiX does not charge any fees
-          for complaint submission, lost and found posts, or anti-ragging reports.
-        </Para>
-        <Para>UniFiX reserves the right to introduce paid features in the future, with prior notice to users.</Para>
-
-        <SectionHeading>IX. INTELLECTUAL PROPERTY RIGHTS</SectionHeading>
-
-        <SubHeading>9.1 Our Intellectual Property</SubHeading>
-        <Para>
-          The UniFiX Platform, including its logo, design, text, graphics, code, and interface, is owned by
-          VCET College and is protected by copyright, trademark, and other intellectual property laws.
-        </Para>
-
-        <SubHeading>9.2 Your Content</SubHeading>
-        <Para>
-          You retain ownership of all content you submit. By submitting content, you grant UniFiX a
-          non-exclusive, royalty-free license to use, store, and display your content solely to operate the Service.
-        </Para>
-
-        <SubHeading>9.3 Restrictions</SubHeading>
-        <Para>
-          You may not copy, modify, distribute, or create derivative works of the Platform without written consent.
-        </Para>
-
-        <SectionHeading>X. EMERGENCY AND ANTI-RAGGING (SOS FEATURE)</SectionHeading>
-
-        <SubHeading>10.1 Anti-Ragging Reporting</SubHeading>
-        <Para>
-          UniFiX provides a dedicated <strong>"Report Ragging"</strong> feature. By using this feature:
-        </Para>
-        <UL>
-          <li>Your report is immediately sent to the HOD</li>
-          <li>You may choose to remain anonymous</li>
-          <li>False or malicious reports may result in disciplinary action</li>
-        </UL>
-
-    <SubHeading>10.2 Emergency Contacts</SubHeading>
-        <Para>In case of a genuine emergency on campus, you are advised to immediately contact:</Para>
-        <UL>
-          <li>College Security: <PhoneLink number="9874563210" /></li>
-          <li>Local Police: <PhoneLink number="100" /></li>
-          <li>Ambulance: <PhoneLink number="102" /></li>
-        </UL>
-
-        <SubHeading>10.3 Misuse of SOS Feature</SubHeading>
-        <Para>
-          Misusing the Anti-Ragging feature for false complaints will result in account termination and may lead
-          to disciplinary action by the College.
-        </Para>
-
-        <SectionHeading>XI. DISCLAIMERS</SectionHeading>
-        <p className="tnc-caps">
-          THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND.
-        </p>
-        <Para>UniFiX does not warrant that:</Para>
-        <UL>
-          <li>Complaints will be resolved within any specific timeframe</li>
-          <li>The Service will be uninterrupted or error-free</li>
-          <li>All staff will be available at all times</li>
-        </UL>
-        <Para>
-          The Platform is a communication and tracking tool. Actual maintenance resolution is the responsibility
-          of the College facilities department.
-        </Para>
-        <Para>UniFiX is not responsible for:</Para>
-        <UL>
-          <li>The behaviour, actions, or inactions of staff members</li>
-          <li>The quality of maintenance work performed</li>
-          <li>Delays caused by circumstances beyond our control</li>
-        </UL>
-
-        <SectionHeading>XII. LIMITATION OF LIABILITY</SectionHeading>
-        <p className="tnc-caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
-        <UL>
-          <li>UniFiX shall not be liable for any indirect, incidental, or consequential damages</li>
-          <li>UniFiX shall not be liable for loss of data, profits, or reputation</li>
-          <li>UniFiX shall not be liable for unauthorized access to your data</li>
-        </UL>
-
-        <SubHeading>Total Liability Cap</SubHeading>
-        <Para>
-          UniFiX's total liability to you for all claims arising out of or related to your use of the Service
-          shall not exceed <strong>₹500 (Indian Rupees)</strong>, even if advised of the possibility of such
-          damages. Since the Service is free, this cap applies to any claim, including negligence claims.
-        </Para>
-
-        <SectionHeading>XIII. FORCE MAJEURE</SectionHeading>
-        <Para>UniFiX shall not be liable for any delay or failure to perform resulting from any of the following:</Para>
-        <UL>
-          <li>Natural disasters including earthquakes, floods, and storms</li>
-          <li>War, terrorism, or civil unrest</li>
-          <li>Government actions or regulations</li>
-          <li>Internet or power outages</li>
-          <li>Cyberattacks or server failures</li>
-          <li>Labor strikes or shortages</li>
-        </UL>
-
-        <SectionHeading>XIV. INDEMNIFICATION</SectionHeading>
-        <Para>
-          You agree to indemnify, defend, and hold harmless UniFiX, VCET College, its officers, directors,
-          employees, and agents from any claims, damages, losses, and expenses including legal fees arising
-          out of or related to:
-        </Para>
-        <UL>
-          <li>Your use of the Service</li>
-          <li>Your violation of these Terms</li>
-          <li>Any content you submit</li>
-        </UL>
-
-        <SectionHeading>XV. TERM AND TERMINATION</SectionHeading>
-
-        <SubHeading>15.1 Term</SubHeading>
-        <Para>These Terms are effective until terminated by either party.</Para>
-
-        <SubHeading>15.2 Termination by You</SubHeading>
-        <Para>You may terminate at any time by deleting your Account.</Para>
-
-        <SubHeading>15.3 Termination by UniFiX</SubHeading>
-        <Para>
-          UniFiX may terminate your Account immediately if you violate these Terms, misuse the Platform,
-          or act fraudulently.
-        </Para>
-
-        <SubHeading>15.4 Effect of Termination</SubHeading>
-        <Para>
-          Upon termination, your access to the Platform will be disabled, and your data will be deleted
-          in accordance with Section XVI.
-        </Para>
-
-        <SectionHeading>XVI. DATA RETENTION AND PRIVACY</SectionHeading>
-
-        <SubHeading>16.1 Data Retention</SubHeading>
-        <Para>
-          When you delete your Account, your personal information will be retained for 15 days before
-          permanent deletion. Complaint records may be retained for longer periods for audit and legal
-          compliance purposes.
-        </Para>
-
-        <SubHeading>16.2 Privacy Policy</SubHeading>
-        <Para>
-          Please read our separate Privacy Policy for detailed information on data collection, use,
-          and protection.
-        </Para>
-
-        <SectionHeading>XVII. GOVERNING LAW AND DISPUTE RESOLUTION</SectionHeading>
-
-        <SubHeading>17.1 Governing Law</SubHeading>
-        <Para>These Terms shall be governed by the laws of the Republic of India.</Para>
-
-        <SubHeading>17.2 Jurisdiction</SubHeading>
-        <Para>
-          The courts of Palghar, Maharashtra shall have exclusive jurisdiction over any disputes arising
-          under these Terms.
-        </Para>
-
-        <SubHeading>17.3 Dispute Resolution – Arbitration</SubHeading>
-        <Para>
-          Any dispute arising out of these Terms shall first be attempted to be resolved amicably within
-          15 days. If unresolved, the dispute shall be referred to binding arbitration in accordance with
-          the Arbitration and Conciliation Act, 1996.
-        </Para>
-        <UL>
-          <li>The arbitration shall be conducted by a single arbitrator mutually appointed by both parties</li>
-          <li>The seat of arbitration shall be Palghar, Maharashtra</li>
-          <li>The language of arbitration shall be English</li>
-          <li>The arbitrator's award shall be final and binding</li>
-        </UL>
-
-        <SubHeading>17.4 Class Action Waiver</SubHeading>
-        <p className="tnc-caps">
-          YOU AGREE TO BRING ANY CLAIMS AGAINST UNIFIX ONLY IN YOUR INDIVIDUAL CAPACITY AND NOT AS
-          A CLASS ACTION.
-        </p>
-
-        <SectionHeading>XVIII. SEVERABILITY</SectionHeading>
-        <Para>
-          If any provision of these Terms is found to be unenforceable, the remaining provisions shall
-          remain in full force and effect.
-        </Para>
-
-        <SectionHeading>XIX. ENTIRE AGREEMENT</SectionHeading>
-        <Para>
-          These Terms, together with the Privacy Policy, constitute the entire agreement between you and
-          UniFiX regarding the Service.
-        </Para>
-
-        <SectionHeading>XX. NO WAIVER</SectionHeading>
-        <Para>
-          UniFiX's failure to enforce any right or provision shall not be considered a waiver of those rights.
-        </Para>
-
-        <SectionHeading>XXI. CHANGES TO THESE TERMS</SectionHeading>
-        <Para>
-          UniFiX may modify these Terms at any time. Users will be notified of significant changes via
-          in-app notification or email. Your continued use after changes constitutes acceptance.
-        </Para>
-
-       <SectionHeading>XVIII. GRIEVANCE REDRESSAL</SectionHeading>
-<Para>
-  Customer Care details: <a href="mailto:unifix.helpdesk@gmail.com">unifix.helpdesk@gmail.com</a>
-</Para>
-<Para>
-  Alternatively, you can contact Customer Care using the chat functionality on the UniFiX App and an associate will get back to you. 
-  You can also reach out to the Customer Care through our 24*7 call support with respect to any technical issues faced by you on 
-  the Platform or for emergency safety and security situations.
-</Para>
-
 
         <Divider />
 
-        <PartHeading>B. SPECIAL TERMS</PartHeading>
-
-        <SectionHeading>I. COMPLAINT MANAGEMENT SERVICES</SectionHeading>
-
-        <SubHeading>I.1 Submission Rules</SubHeading>
+        <SectionHeading>4. Role-Based Access</SectionHeading>
+        <Para>
+          UniFiX implements role-based access controls to ensure that Users can only access functionality appropriate to their designated role. The Platform is configured such that:
+        </Para>
         <UL>
-          <li>Complaints can only be submitted between <strong>8:00 AM and 8:00 PM IST</strong></li>
-          <li>Users must provide accurate location including building and room number</li>
-          <li>Photo upload is optional but encouraged</li>
+          <li>Students and Teachers have access to complaint submission, tracking, and Lost &amp; Found features.</li>
+          <li>Maintenance Staff have access to complaint management, acceptance, and processing features relevant to their assigned complaints.</li>
+          <li>Administrators have access to management, oversight, and system configuration features.</li>
+        </UL>
+        <Para>
+          Users may not attempt to access functionality beyond their authorized role. Any attempt to bypass role-based restrictions may result in account suspension or termination.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>5. Complaint Management</SectionHeading>
+
+        <SubHeading>5.1 Submitting a Complaint</SubHeading>
+        <Para>Students and Teachers may submit complaints regarding campus facilities or maintenance issues. When submitting a complaint, Users must provide:</Para>
+        <UL>
+          <li>A category describing the type of issue (e.g., electrical, plumbing, cleaning);</li>
+          <li>A description of the issue;</li>
+          <li>The location of the issue, including building and room number;</li>
+          <li>Any relevant additional details or photographs.</li>
+        </UL>
+        <Para>Users must provide truthful and accurate information. Submitting false, misleading, or frivolous complaints is prohibited and may result in account suspension or termination.</Para>
+
+        <SubHeading>5.2 Complaint Processing</SubHeading>
+        <Para>Once a complaint is submitted, it enters the following workflow:</Para>
+        <UL>
+          <li><strong>Pending:</strong> The complaint awaits assignment to appropriate maintenance staff based on its category.</li>
+          <li><strong>Assigned:</strong> A staff member has accepted the complaint and taken responsibility for its resolution.</li>
+          <li><strong>In Progress:</strong> The assigned staff member has begun work on the complaint.</li>
+          <li><strong>Completed:</strong> The complaint has been resolved by the assigned staff member or by an administrator.</li>
+          <li><strong>Rejected:</strong> The complaint has been rejected by staff or administrators for valid reasons.</li>
+        </UL>
+        <Para>Complaint statuses are updated in real-time, and Users may track the status of their complaints through the Platform.</Para>
+
+        <SubHeading>5.3 Escalation</SubHeading>
+        <Para>Complaints that remain unresolved beyond designated time limits may be escalated. When a complaint is escalated:</Para>
+        <UL>
+          <li>Administrators are notified;</li>
+          <li>The Institution's Head of Department may be notified via email;</li>
+          <li>Administrators may take ownership of the complaint or mark it as resolved.</li>
+        </UL>
+        <Para>Escalation is designed to ensure timely resolution of issues and does not guarantee immediate resolution.</Para>
+
+        <SubHeading>5.4 Ratings</SubHeading>
+        <Para>
+          After a complaint is marked as completed, the submitting User may rate the staff member who resolved the complaint. Ratings are submitted voluntarily and should reflect the User's honest assessment. Abusive or manipulative rating behavior is prohibited.
+        </Para>
+
+        <SubHeading>5.5 Complaint History</SubHeading>
+        <Para>
+          The Platform maintains a history of complaints for each User, including complaint details, status updates, and resolution information. Users may access their own complaint history through the Platform.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>6. Lost &amp; Found</SectionHeading>
+
+        <SubHeading>6.1 Posting Found Items</SubHeading>
+        <Para>Maintenance Staff may post information about found items on campus. Posts must include:</Para>
+        <UL>
+          <li>A description of the item;</li>
+          <li>The location where the item was found;</li>
+          <li>Information about where the item may be collected.</li>
+        </UL>
+        <Para>Staff may include photographs of found items to assist in identification.</Para>
+
+        <SubHeading>6.2 Reporting Lost Items</SubHeading>
+        <Para>Students and Teachers may report lost items through the Platform. Reports must include:</Para>
+        <UL>
+          <li>A description of the item;</li>
+          <li>The location where it was lost;</li>
+          <li>The date it was lost;</li>
+          <li>Contact information for the reporter.</li>
         </UL>
 
-        <SubHeading>I.2 Categories and Response Time Limits</SubHeading>
-    <UL>
-  <li><strong>Cleaning, Housekeeping, and Washroom</strong> - Response Time: 1 hour</li>
-  <li><strong>Technician, IT, Lab, Safety, and Others</strong> - Response Time: 2 hours</li>
-  <li><strong>Electrical, Plumbing, Civil, and Carpentry</strong> - Response Time: 24 hours</li>
-</UL>
+        <SubHeading>6.3 Claims and Handovers</SubHeading>
+        <Para>
+          Staff who have posted found items may mark items as handed over to their rightful owner or to another individual. Claims and handovers are recorded in the Platform for accountability.
+        </Para>
 
-        <SubHeading>I.3 Staff Assignment</SubHeading>
+        <SubHeading>6.4 Accuracy and Responsibility</SubHeading>
+        <Para>
+          Users are responsible for the accuracy of any information they submit in connection with Lost &amp; Found posts. Users must not submit false claims or attempt to claim items that do not belong to them. UniFiX does not guarantee that lost items will be recovered or that found items will be returned to their owners.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>7. Notifications</SectionHeading>
+        <Para>The Platform may send notifications to Users regarding:</Para>
         <UL>
-          <li>Eligible staff receive notifications for new complaints</li>
-          <li>Staff may accept or reject complaints with reason</li>
-          <li>If all staff reject, the complaint is marked as rejected and the user is notified</li>
-          <li>Gender-based routing applies to washroom complaints</li>
+          <li>Complaint status changes (accepted, in progress, completed, rejected);</li>
+          <li>Complaint assignment to staff;</li>
+          <li>Escalation of complaints;</li>
+          <li>Lost &amp; Found updates;</li>
+          <li>System announcements;</li>
+          <li>Other events relevant to the User's role and activity.</li>
+        </UL>
+        <Para>
+          Notifications may be delivered through push notifications (mobile app), email, or in-app messages, depending on the User's settings and the nature of the notification. UniFiX makes reasonable efforts to deliver notifications but does not guarantee receipt. Delivery may be affected by device settings, network connectivity, or third-party service availability.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>8. User-Generated Content and Information</SectionHeading>
+
+        <SubHeading>8.1 Content Ownership and Responsibility</SubHeading>
+        <Para>
+          Users retain ownership of Content they submit through the Platform. By submitting Content, Users grant UniFiX a license to use, store, display, and process that Content as necessary to provide the Platform's services.
+        </Para>
+
+        <SubHeading>8.2 Content Standards</SubHeading>
+        <Para>Users must not submit Content that is:</Para>
+        <UL>
+          <li>False, misleading, or fraudulent;</li>
+          <li>Abusive, harassing, threatening, or discriminatory;</li>
+          <li>Obscene, offensive, or otherwise inappropriate;</li>
+          <li>Infringing on the rights of others;</li>
+          <li>Unlawful or in violation of any applicable law or regulation;</li>
+          <li>Intended to harm the Platform, its Users, or the Institution;</li>
+          <li>Unrelated to the Platform's legitimate purposes.</li>
         </UL>
 
-        <SubHeading>I.4 Escalation Workflow</SubHeading>
+        <SubHeading>8.3 Content Moderation</SubHeading>
+        <Para>
+          UniFiX reserves the right to review, modify, or remove any Content that violates these Terms or is otherwise inappropriate. Administrators may take action on Content at their discretion.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>9. Prohibited Use</SectionHeading>
+        <Para>Users must not:</Para>
         <UL>
-          <li>If unresolved within time limit, the complaint is flagged</li>
-          <li>Admin receives notification</li>
-          <li>If no admin action after 20 minutes, HOD escalation email is sent</li>
-        </UL>
-
-        <SubHeading>I.5 Ratings</SubHeading>
-        <UL>
-          <li>Users may rate completed complaints from 1 to 5 stars</li>
-          <li>Ratings are anonymous and affect staff performance metrics</li>
-        </UL>
-
-        <SectionHeading>II. LOST AND FOUND SERVICES</SectionHeading>
-
-        <SubHeading>II.1 Lost Reports for Students and Teachers</SubHeading>
-        <UL>
-          <li>Users may post lost items with description, location, and optional photo</li>
-          <li>Posts remain active for <strong>14 days</strong> from the lost date</li>
-          <li>Users may mark their item as "Found" or delete their report</li>
-        </UL>
-
-        <SubHeading>II.2 Found Items for Staff Only</SubHeading>
-        <UL>
-          <li>Staff may post found items</li>
-          <li>Staff may mark items as "Handed Over" with recipient name</li>
-        </UL>
-
-        <SubHeading>II.3 Claims and Handover</SubHeading>
-        <UL>
-          <li>Handover records are publicly visible in the Claims tab</li>
-          <li>All handovers are logged with timestamp and recipient name</li>
-        </UL>
-
-        <SectionHeading>III. ANTI-RAGGING REPORTING</SectionHeading>
-
-        <SubHeading>III.1 Confidential Reporting</SubHeading>
-        <UL>
-          <li>Users may report ragging incidents confidentially</li>
-          <li>Anonymous option is available</li>
-          <li>Reports go directly to the HOD via email</li>
-        </UL>
-
-        <SubHeading>III.2 Legal Compliance</SubHeading>
-        <UL>
-          <li>Reports are processed in compliance with UGC Anti-Ragging Regulations</li>
-          <li>The College will take appropriate action within 72 hours</li>
-        </UL>
-
-        <SubHeading>III.3 False Reports</SubHeading>
-        <UL>
-          <li>Knowingly filing a false ragging report is a serious offense</li>
-          <li>May result in disciplinary action under College policy</li>
-        </UL>
-
-        <SectionHeading>IV. STAFF OBLIGATIONS</SectionHeading>
-
-<SubHeading>IV.1 Response Requirements</SubHeading>
-<Para>Staff must respond to assigned complaints within the following timeframes:</Para>
-<UL>
-  <li><strong>Accept or Reject complaint</strong> - 1 hour</li>
-  <li><strong>Update status to "In Progress"</strong> - Within category limit</li>
-  <li><strong>Mark as "Completed"</strong> - Within category limit</li>
-</UL>
-
-        <SubHeading>IV.2 Professional Conduct</SubHeading>
-        <Para>Staff must adhere to all of the following:</Para>
-        <UL>
-          <li>Handle complaints professionally and respectfully</li>
-          <li>Not misrepresent work completion</li>
-          <li>Respect user privacy</li>
-        </UL>
-
-        <SubHeading>IV.3 Consequences of Misconduct</SubHeading>
-        <UL>
-          <li>Low ratings may affect performance reviews</li>
-          <li>Repeated violations may result in account termination</li>
-          <li>Serious misconduct will be reported to College administration</li>
+          <li>Access or attempt to access accounts other than their own;</li>
+          <li>Bypass or attempt to bypass authentication or authorization controls;</li>
+          <li>Interfere with the Platform's operation or security;</li>
+          <li>Upload malicious code, files, or content;</li>
+          <li>Submit fraudulent, false, or frivolous complaints;</li>
+          <li>Harass, threaten, or abuse other Users or staff;</li>
+          <li>Misuse the Lost &amp; Found functionality;</li>
+          <li>Impersonate another User or individual;</li>
+          <li>Abuse administrative functions if you are an Administrator;</li>
+          <li>Reverse engineer, decompile, or disassemble the Platform;</li>
+          <li>Use the Platform for any purpose other than its intended use as a campus complaint management system;</li>
+          <li>Violate any applicable law, regulation, or institutional policy.</li>
         </UL>
 
         <Divider />
 
- 
+        <SectionHeading>10. Administrative Rights</SectionHeading>
+        <Para>Administrators have the authority to:</Para>
+        <UL>
+          <li>Manage User accounts, including approval, suspension, and termination;</li>
+          <li>Review, reassign, and resolve complaints;</li>
+          <li>Approve or reject staff account registrations;</li>
+          <li>Manage ID card update requests;</li>
+          <li>Manage account deletion requests;</li>
+          <li>Manage security issue reports;</li>
+          <li>Manage system settings and configuration;</li>
+          <li>Remove or moderate Content;</li>
+          <li>Oversee and manage staff assignments.</li>
+        </UL>
+        <Para>
+          Administrators act in accordance with institutional policies and these Terms. Abuse of administrative privileges may result in removal of administrator status and appropriate institutional action.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>11. Third-Party Services</SectionHeading>
+        <Para>UniFiX relies on the following third-party services to provide its functionality:</Para>
+        <UL>
+          <li><strong>Cloudinary:</strong> For storing and delivering images and files uploaded by Users.</li>
+          <li><strong>Firebase / Google Cloud Messaging:</strong> For delivering push notifications to mobile devices.</li>
+          <li><strong>Brevo (Sendinblue):</strong> For sending email notifications and communications.</li>
+          <li><strong>PostgreSQL / Redis:</strong> For data storage and caching.</li>
+          <li><strong>Sentry:</strong> For error tracking and performance monitoring.</li>
+        </UL>
+        <Para>
+          These third-party services are operated by their respective providers and are subject to their own terms, conditions, and privacy policies. UniFiX does not control these services and is not responsible for their performance or availability. By using the Platform, you acknowledge that data may be transmitted to and processed by these third-party services.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>12. Availability and Service Reliability</SectionHeading>
+        <Para>UniFiX strives to provide a reliable and available service. However, Users acknowledge that the Platform may experience interruptions due to:</Para>
+        <UL>
+          <li>Scheduled or emergency maintenance;</li>
+          <li>Network failures or connectivity issues;</li>
+          <li>Server or infrastructure outages;</li>
+          <li>Third-party service failures;</li>
+          <li>Software bugs or technical issues;</li>
+          <li>Events outside UniFiX's control.</li>
+        </UL>
+        <Para>
+          UniFiX makes reasonable efforts to minimize interruptions but does not guarantee continuous, uninterrupted, or error-free access to the Platform.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>13. Offline Functionality</SectionHeading>
+        <Para>
+          The UniFiX mobile application includes limited offline functionality. When a User is offline, certain information may be cached locally on their device, allowing Users to view previously loaded data even without an internet connection.
+        </Para>
+        <Para>
+          Submitting complaints, receiving real-time updates, and performing certain actions require an active internet connection. When connectivity is restored, the application will attempt to synchronize offline data with the Platform's servers.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>14. Data and Privacy</SectionHeading>
+        <Para>
+          The handling of personal information submitted through the Platform is governed by the UniFiX Privacy Policy. By using the Platform, you acknowledge that you have read, understood, and agree to the collection and processing of your personal data as described in the Privacy Policy.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>15. Account Deletion</SectionHeading>
+
+        <SubHeading>15.1 Student and Teacher Account Deletion</SubHeading>
+        <Para>
+          Students and Teachers may delete their accounts through the Platform. Account deletion will permanently remove access to the account and associated data, subject to any legal, operational, or institutional retention requirements.
+        </Para>
+
+        <SubHeading>15.2 Staff Account Deletion</SubHeading>
+        <Para>
+          Staff members who wish to delete their accounts must submit a deletion request through the Platform. These requests are subject to administrative review and approval. Staff accounts are not immediately deleted upon request.
+        </Para>
+
+        <SubHeading>15.3 Data Retention</SubHeading>
+        <Para>
+          UniFiX may retain certain information after account deletion where required for legitimate operational, legal, security, or institutional purposes, including complaint records for accountability and auditing.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>16. Intellectual Property</SectionHeading>
+        <Para>
+          The Platform, including its software, code, design, user interface, trademarks, logos, and branding, is the property of UniFiX and/or its licensors. All rights are reserved.
+        </Para>
+        <Para>
+          Users are granted a limited, non-exclusive, non-transferable, revocable license to use the Platform in accordance with these Terms. Users may not copy, modify, distribute, sell, or lease any part of the Platform without explicit written permission.
+        </Para>
+
+        <SubHeading>16.1 User Content</SubHeading>
+        <Para>
+          Users retain ownership of their submitted Content. By submitting Content, Users grant UniFiX a non-exclusive, worldwide, royalty-free license to use, store, display, and process that Content solely for the purpose of providing the Platform's services. This license ends when Content is deleted, except where retention is required for legitimate operational, legal, security, or institutional purposes.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>17. Disclaimer</SectionHeading>
+        <p className="tnc-caps">
+          THE PLATFORM IS PROVIDED "AS IS" AND "AS AVAILABLE." UNIFIX MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, REGARDING:
+        </p>
+        <UL>
+          <li>The accuracy of user-submitted information;</li>
+          <li>The availability or reliability of the Platform;</li>
+          <li>The resolution of complaints or recovery of lost items;</li>
+          <li>The performance of third-party services;</li>
+          <li>The absence of errors, bugs, or security vulnerabilities;</li>
+          <li>The suitability of the Platform for your specific needs.</li>
+        </UL>
+        <p className="tnc-caps">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, UNIFIX DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED.</p>
+
+        <Divider />
+
+        <SectionHeading>18. Limitation of Liability</SectionHeading>
+        <p className="tnc-caps">
+          TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, UNIFIX AND ITS AFFILIATES, OFFICERS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM OR RELATED TO YOUR USE OF THE PLATFORM, INCLUDING BUT NOT LIMITED TO:
+        </p>
+        <UL>
+          <li>Loss of data or information;</li>
+          <li>Loss of opportunity;</li>
+          <li>Damage to reputation;</li>
+          <li>Unauthorized access to your account;</li>
+          <li>Interruptions or unavailability of the Platform;</li>
+          <li>Actions taken by administrators or institutional authorities;</li>
+          <li>Any other matter relating to the Platform.</li>
+        </UL>
+        <Para>
+          UniFiX's total liability for all claims arising from or relating to the Platform shall not exceed the total amount paid by you to use the Platform. Since the Service is free, this cap applies to any claim, including negligence claims.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>19. Indemnification</SectionHeading>
+        <Para>You agree to indemnify, defend, and hold harmless UniFiX, its affiliates, officers, employees, and agents from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising from or related to:</Para>
+        <UL>
+          <li>Your use of the Platform;</li>
+          <li>Your violation of these Terms;</li>
+          <li>Your violation of any applicable law, regulation, or institutional policy;</li>
+          <li>Your violation of any rights of another party;</li>
+          <li>Any Content you submit through the Platform.</li>
+        </UL>
+
+        <Divider />
+
+        <SectionHeading>20. Suspension and Termination</SectionHeading>
+        <Para>UniFiX reserves the right to suspend or terminate your account and access to the Platform at any time, with or without notice, for any reason, including but not limited to:</Para>
+        <UL>
+          <li>Violation of these Terms;</li>
+          <li>Fraudulent, abusive, or illegal activity;</li>
+          <li>Security concerns;</li>
+          <li>Misuse of the Platform;</li>
+          <li>Unauthorized access attempts;</li>
+          <li>Impersonation;</li>
+          <li>Institutional requirements;</li>
+          <li>Inactivity or account abandonment.</li>
+        </UL>
+        <Para>
+          If your account is suspended or terminated, you may no longer access or use the Platform. Termination does not relieve you of any obligations incurred prior to termination.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>21. Changes to the Platform</SectionHeading>
+        <Para>
+          UniFiX may modify, update, remove, or add functionality to the Platform at any time, with or without notice. Changes may include new features, modifications to existing features, removal of features, security updates, performance improvements, bug fixes, and user interface changes. UniFiX is not liable for any loss or inconvenience resulting from changes to the Platform.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>22. Changes to These Terms</SectionHeading>
+        <Para>
+          UniFiX reserves the right to revise these Terms at any time. The revised Terms will be effective as of the date indicated at the top of this document. Continued use of the Platform after the effective date of revised Terms constitutes acceptance of the revised Terms. If you do not agree to the revised Terms, you must stop using the Platform.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>23. Governing Law and Jurisdiction</SectionHeading>
+        <Para>
+          These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles. Any legal action or proceeding arising out of or related to these Terms or your use of the Platform shall be brought exclusively in the courts of Mumbai, Maharashtra, and you consent to the exclusive jurisdiction of such courts.
+        </Para>
+
+        <Divider />
+
+        <SectionHeading>24. Contact Information</SectionHeading>
+        <Para>For questions, concerns, or requests regarding these Terms or the Platform, please contact:</Para>
+        <UL>
+          <li><strong>UniFiX Administrator:</strong> Shahid</li>
+    
+          <li><strong>Support Email:</strong> <a href="mailto:unifix.helpdesk@gmail.com">unifix.helpdesk@gmail.com</a></li>
+          
+        </UL>
+
+        <Divider />
+
+        <SectionHeading>25. Miscellaneous</SectionHeading>
+
+        <SubHeading>25.1 Entire Agreement</SubHeading>
+        <Para>
+          These Terms, together with the Privacy Policy, constitute the entire agreement between you and UniFiX regarding your use of the Platform and supersede all prior agreements, understandings, or representations.
+        </Para>
+
+        <SubHeading>25.2 Severability</SubHeading>
+        <Para>
+          If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.
+        </Para>
+
+        <SubHeading>25.3 Waiver</SubHeading>
+        <Para>
+          The failure of UniFiX to enforce any provision of these Terms shall not constitute a waiver of that provision or any other provision.
+        </Para>
+
+        <SubHeading>25.4 Assignment</SubHeading>
+        <Para>
+          Users may not assign their rights or obligations under these Terms without the prior written consent of UniFiX. UniFiX may assign these Terms at its discretion.
+        </Para>
+
+        <SubHeading>25.5 No Third-Party Beneficiaries</SubHeading>
+        <Para>
+          These Terms are for the benefit of the parties and their permitted assigns and do not create any rights in favor of any third party.
+        </Para>
+
+        <Divider />
+
       </div>
-
-    <Footer />
+      <Footer />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const teamMembers = [
   { name: "Shahiduddin Shaikh", role: "Founder & Developer" },
-  { name: "Om Narkar", role: "Developer" },
+  { name: "Om Narkar", role: "Testing" },
   { name: "Viraj Sawant", role: "Testing" },
   { name: "Khushi Pandey", role: "Designing" },
 

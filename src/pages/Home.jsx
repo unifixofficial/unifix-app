@@ -48,7 +48,7 @@ export default function Home() {
             <div className="home-hero-img-wrap fade-in stagger-4">
               <div className="home-hero-phone">
                 <img
-                  src="https://i.ibb.co/wrCSVLDT/Chat-GPT-Image-Aug-14-2026-11-59-32-PM.png"
+                  src="/unifix-app.png"
                   alt="UniFiX App Report Issue Screen"
                 />
               </div>
@@ -91,7 +91,7 @@ export default function Home() {
 <div className="home-problem-img">
               <div className="home-img-card fade-in stagger-2">
                 <img
-                  src="https://i.ibb.co/27phP7pg/vcet.webp"
+                 src="/vcet.png"
                   alt="VCET Campus buildings"
                 />
                 <div className="home-img-overlay">
