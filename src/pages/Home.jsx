@@ -36,7 +36,7 @@ export default function Home() {
                 keep your institution running smoothly.
               </p>
               <div className="home-hero-cta fade-up stagger-3">
-                <a href="/download" className="home-btn-primary">
+         <a href="https://play.google.com/store/apps/details?id=com.unifix.app" target="_blank" rel="noopener noreferrer" className="home-btn-primary">
                   Download App
                 </a>
                 <a href="/about" className="home-btn-outline">
